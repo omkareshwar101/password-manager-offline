@@ -2,6 +2,8 @@
 
 OfflineVault is a fully offline Android password manager built with Kotlin and Jetpack Compose. It stores logins, notes, and optional account images in an encrypted local vault, with no network permission, no cloud sync, and no analytics.
 
+**[Download the latest APK](https://github.com/omkareshwar101/password-manager-offline/releases/latest)** · Android 8.0+ · [MIT License](LICENSE)
+
 > **Your vault cannot be recovered without your master PIN or your security answers.** There is no server, reset link, or support back door. Encrypted backups are the only way to move a vault to another device, and the backup PIN is also unrecoverable.
 
 > **Security notice:** OfflineVault is an independent, local-first project and has not undergone a professional security audit. Review the security model before trusting it with high-value secrets, and keep encrypted backups.
@@ -10,7 +12,7 @@ OfflineVault is a fully offline Android password manager built with Kotlin and J
 
 ### Download
 
-Check this repository's **Releases** page for the latest signed APK. If no release has been published yet, build from source using the instructions below.
+Download the signed APK from the [latest release](https://github.com/omkareshwar101/password-manager-offline/releases/latest). Each release includes a SHA-256 checksum file. If no release is available, build from source using the instructions below.
 
 - Minimum Android version: **8.0 (API 26)**
 - Android may ask you to allow installing apps from your browser or file manager.
