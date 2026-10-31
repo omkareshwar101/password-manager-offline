@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+      API-independent attributes live in the base style. Version-qualified
+      variants add display-cutout and system-bar contrast attributes only on
+      the API levels that understand them.
+    -->
+    <style name="Theme.OfflineVault.Base" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/offlinevault_background</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="colorPrimary">@color/offlinevault_indigo</item>
+        <item name="colorSecondary">@color/offlinevault_teal</item>
+    </style>
+
+    <style name="Theme.OfflineVault" parent="Theme.OfflineVault.Base" />
+
+    <style name="Theme.OfflineVault.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/offlinevault_splash_background</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_splash_logo</item>
+        <item name="postSplashScreenTheme">@style/Theme.OfflineVault</item>
+    </style>
+</resources>

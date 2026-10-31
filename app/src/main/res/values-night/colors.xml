@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="offlinevault_background">#121212</color>
+    <color name="offlinevault_indigo">#8C9EFF</color>
+    <color name="offlinevault_teal">#4DD0C4</color>
+    <color name="offlinevault_splash_background">#121212</color>
+    <color name="offlinevault_launcher_background">#3F51B5</color>
+</resources>

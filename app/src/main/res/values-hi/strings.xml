@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">OfflineVault</string>
+    <string name="offline_badge" formatted="false">100% ऑफ़लाइन</string>
+
+    <!-- Common -->
+    <string name="back">वापस</string>
+    <string name="cancel">रद्द करें</string>
+    <string name="save">सहेजें</string>
+    <string name="saving">सहेजा जा रहा है…</string>
+    <string name="delete">हटाएँ</string>
+    <string name="edit">संपादित करें</string>
+    <string name="continue_label">जारी रखें</string>
+    <string name="retry">फिर प्रयास करें</string>
+    <string name="close">बंद करें</string>
+    <string name="copy">कॉपी करें</string>
+    <plurals name="copied_clears">
+        <item quantity="one">कॉपी किया गया। क्लिपबोर्ड %1$d सेकंड में साफ़ हो जाएगा।</item>
+        <item quantity="other">कॉपी किया गया। क्लिपबोर्ड %1$d सेकंड में साफ़ हो जाएगा।</item>
+    </plurals>
+    <string name="copied_no_clear">क्लिपबोर्ड पर कॉपी किया गया।</string>
+    <string name="show">दिखाएँ</string>
+    <string name="hide">छिपाएँ</string>
+    <string name="reveal">दिखाएँ</string>
+    <string name="error_generic">कुछ गलत हो गया। कृपया फिर प्रयास करें।</string>
+    <string name="settings">सेटिंग्स</string>
+    <string name="about">परिचय</string>
+    <string name="vault">वॉल्ट</string>
+    <string name="favorite">पसंदीदा</string>
+    <string name="unfavorite">पसंदीदा हटाएँ</string>
+    <string name="authentication_failed">प्रमाणीकरण विफल।</string>
+    <string name="password_not_revealed">प्रमाणीकरण विफल। पासवर्ड नहीं दिखाया गया।</string>
+    <string name="verify">सत्यापित करें</string>
+    <string name="save_changes">बदलाव सहेजें</string>
+
+    <!-- Privacy / onboarding -->
+    <string name="privacy_title">आपके रहस्य कभी इस फ़ोन से बाहर नहीं जाते।</string>
+    <string name="privacy_subtitle">OfflineVault पूरी तरह ऑफ़लाइन चलने के लिए बना है। कोई खाता नहीं। कोई क्लाउड नहीं। कोई ट्रैकिंग नहीं। कोई अपवाद नहीं।</string>
+    <string name="privacy_no_internet_title">इंटरनेट अनुमति नहीं</string>
+    <string name="privacy_no_internet_body">ऐप के पास नेटवर्क अनुमति ही नहीं है, इसलिए यह आपका डेटा अपलोड कर ही नहीं सकता।</string>
+    <string name="privacy_encrypted_title">दोहरा एन्क्रिप्शन</string>
+    <string name="privacy_encrypted_body">डेटाबेस SQLCipher से लॉक है और हर संवेदनशील फ़ील्ड AES-256-GCM से एन्क्रिप्ट है।</string>
+    <string name="privacy_keystore_title">Android Keystore में कुंजियाँ</string>
+    <string name="privacy_keystore_body">एन्क्रिप्शन कुंजियाँ Android Keystore में बनती हैं और जहाँ उपलब्ध हो वहाँ हार्डवेयर-समर्थित सुरक्षा का उपयोग करती हैं।</string>
+    <string name="privacy_storage_title">केवल निजी स्टोरेज</string>
+    <string name="privacy_storage_body">आपका वॉल्ट ऐप-निजी स्टोरेज में रहता है, फ़ाइल मैनेजर, USB एक्सेस और अन्य ऐप्स से छिपा हुआ।</string>
+    <string name="privacy_recovery_title">रिकवरी का एकमात्र तरीका आप हैं</string>
+    <string name="privacy_recovery_body">कोई ईमेल रीसेट, OTP या क्लाउड बैकअप नहीं है। यदि आप अपना पिन और सुरक्षा उत्तर भूल जाते हैं, तो वॉल्ट रिकवर नहीं हो सकता।</string>
+    <string name="get_started">मेरा वॉल्ट सेट करें</string>
+    <string name="step_of">चरण %1$d / %2$d</string>
+
+    <string name="onboarding_pin_title">मास्टर पिन बनाएँ</string>
+    <string name="onboarding_pin_subtitle">यह पिन बायोमेट्रिक्स विफल होने पर अंतिम विकल्प है। कम से कम 6 अंकों का उपयोग करें।</string>
+    <string name="pin">मास्टर पिन</string>
+    <string name="confirm_pin">पिन की पुष्टि करें</string>
+    <string name="pin_hint">6–12 अंक</string>
+    <string name="pin_error_length">6 से 12 अंकों का उपयोग करें।</string>
+    <string name="pin_error_mismatch">पिन मेल नहीं खाते।</string>
+    <string name="pin_warning">इस पिन को याद रखें। वॉल्ट मिटाए बिना इसे रीसेट नहीं किया जा सकता।</string>
+
+    <string name="onboarding_questions_title">सुरक्षा प्रश्न सेट करें</string>
+    <string name="onboarding_questions_subtitle">तीन प्रश्न चुनें और उत्तर दें। दो सही उत्तर आपका वॉल्ट खोल सकते हैं।</string>
+    <string name="question_n">प्रश्न %1$d</string>
+    <string name="choose_question">प्रश्न चुनें</string>
+    <string name="custom_question_hint">आपका अपना प्रश्न</string>
+    <string name="answer_hint">आपका उत्तर</string>
+    <string name="security_answers_note">उत्तर केस-असंवेदनशील हैं। केवल salted PBKDF2 हैश संग्रहीत होते हैं — स्वयं उत्तर कभी नहीं।</string>
+    <string name="security_warning">कोई खाता रिकवरी नहीं है। अपने पिन या दो सुरक्षा उत्तरों के बिना यह वॉल्ट नहीं खुलेगा।</string>
+    <string name="answer_required">कृपया तीनों प्रश्नों के उत्तर दें।</string>
+    <string name="questions_must_differ">कृपया तीन अलग-अलग प्रश्न चुनें।</string>
+
+    <string name="onboarding_biometric_title">बायोमेट्रिक्स से अनलॉक करें</string>
+    <string name="onboarding_biometric_subtitle">वॉल्ट खोलने और पासवर्ड देखने के लिए अपने फ़िंगरप्रिंट या चेहरे का उपयोग करें।</string>
+    <string name="enable_biometrics">बायोमेट्रिक्स सक्षम करें</string>
+    <string name="disable_biometric">बायोमेट्रिक अनलॉक बंद करें</string>
+    <string name="biometrics_enabled">बायोमेट्रिक अनलॉक सक्षम है</string>
+    <string name="skip_for_now">अभी छोड़ें</string>
+    <string name="no_biometrics_warning">इस डिवाइस पर कोई नामांकित बायोमेट्रिक नहीं मिला। आप अभी भी पिन और सुरक्षा प्रश्नों का उपयोग कर सकते हैं।</string>
+    <string name="open_device_settings">डिवाइस सेटिंग्स खोलें</string>
+    <string name="biometric_setup_hint">पहले Android सेटिंग्स में फ़िंगरप्रिंट या चेहरा जोड़ें, फिर यहाँ लौटकर इसे सक्षम करें।</string>
+    <string name="biometric_confirm_prompt">बायोमेट्रिक अनलॉक की पुष्टि करें</string>
+    <string name="create_vault">मेरा वॉल्ट बनाएँ</string>
+    <string name="creating_vault">आपका वॉल्ट एन्क्रिप्ट हो रहा है…</string>
+    <string name="onboarding_error">सेटअप पूरा नहीं हो सका। कृपया फिर प्रयास करें।</string>
+
+    <!-- Unlock -->
+    <string name="lock_title">वॉल्ट लॉक है</string>
+    <string name="lock_subtitle">अपना निजी वॉल्ट खोलने के लिए प्रमाणित करें।</string>
+    <string name="biometric_prompt_title">OfflineVault अनलॉक करें</string>
+    <string name="biometric_prompt_subtitle">जारी रखने के लिए अपनी पहचान पुष्ट करें</string>
+    <string name="use_biometrics">बायोमेट्रिक्स का उपयोग करें</string>
+    <string name="use_pin">मास्टर पिन का उपयोग करें</string>
+    <string name="use_security_questions">सुरक्षा प्रश्नों का उपयोग करें</string>
+    <string name="enter_pin">अपना मास्टर पिन दर्ज करें</string>
+    <string name="unlock_vault">वॉल्ट अनलॉक करें</string>
+    <string name="auth_questions_title">सुरक्षा प्रश्नों के उत्तर दें</string>
+    <string name="auth_questions_subtitle">दो सही उत्तर वॉल्ट खोल देंगे।</string>
+    <string name="submit_answers">उत्तरों से अनलॉक करें</string>
+    <string name="auth_invalid_pin">गलत पिन।</string>
+    <string name="auth_biometric_failed">बायोमेट्रिक प्रमाणीकरण विफल। अपने पिन या सुरक्षा प्रश्नों का उपयोग करें।</string>
+    <string name="auth_invalid_answers">पर्याप्त सही उत्तर नहीं। फिर प्रयास करें।</string>
+    <string name="auth_locked_out">बहुत अधिक विफल प्रयास। %1$s में फिर प्रयास करें।</string>
+    <string name="auth_locked_out_short">बहुत अधिक विफल प्रयास।</string>
+    <string name="auth_force_questions">बहुत अधिक गलत पिन। जारी रखने के लिए कृपया दो सुरक्षा प्रश्नों के उत्तर दें।</string>
+    <string name="auth_footer">कोई नेटवर्क नहीं। कोई रिकवरी क्लाउड नहीं। बस आप।</string>
+    <string name="security_question_locked_note">आपकी सुरक्षा के लिए, बार-बार विफलता के बाद पिन प्रविष्टि रोक दी गई है।</string>
+
+    <!-- Vault -->
+    <string name="vault_title">OfflineVault</string>
+    <string name="search_accounts">खाते खोजें</string>
+    <string name="all_categories">सभी</string>
+    <string name="no_accounts_title">आपका वॉल्ट खाली है</string>
+    <string name="no_accounts_body">अपना पहला लॉगिन जोड़ें। सब कुछ एन्क्रिप्टेड है और इसी फ़ोन पर रहता है।</string>
+    <string name="no_search_results">आपकी खोज से कोई खाता नहीं मिला।</string>
+    <string name="add_account">खाता जोड़ें</string>
+    <string name="reveal_password">पासवर्ड दिखाएँ</string>
+    <string name="copy_password">पासवर्ड कॉपी करें</string>
+    <string name="hide_password">पासवर्ड छिपाएँ</string>
+    <string name="username_not_set">कोई उपयोगकर्ता नाम सहेजा नहीं गया</string>
+    <string name="reveal_auto_hide">%1$d सेकंड में छिप जाएगा</string>
+    <string name="auth_reveal_title">पासवर्ड दिखाएँ</string>
+    <string name="auth_reveal_subtitle">%1$s का पासवर्ड देखने के लिए प्रमाणित करें</string>
+    <string name="auth_manage_questions_title">पुष्टि करें कि यह आप हैं</string>
+    <string name="auth_manage_questions_subtitle">रिकवरी प्रश्न बदलने से पहले फिर से प्रमाणित करें</string>
+    <plurals name="accounts_count">
+        <item quantity="one">%1$d खाता</item>
+        <item quantity="other">%1$d खाते</item>
+    </plurals>
+
+    <string name="category_social">सोशल</string>
+    <string name="category_banking">बैंकिंग</string>
+    <string name="category_work">कार्य</string>
+    <string name="category_shopping">खरीदारी</string>
+    <string name="category_other">अन्य</string>
+
+    <string name="badge_weak">कमज़ोर पासवर्ड</string>
+    <string name="badge_reused">पासवर्ड दोहराया गया</string>
+    <string name="badge_old">पुराना पासवर्ड</string>
+
+    <!-- Detail -->
+    <string name="account_details">खाता विवरण</string>
+    <string name="url_label">लिंक / URL</string>
+    <string name="username_label">उपयोगकर्ता नाम / ईमेल</string>
+    <string name="password_label">पासवर्ड</string>
+    <string name="notes_label">नोट्स</string>
+    <string name="last_changed">अंतिम बदलाव %1$s</string>
+    <string name="changed_today">आज</string>
+    <string name="changed_days">%1$d दिन पहले</string>
+    <string name="changed_one_day">कल</string>
+    <string name="changed_months">%1$d महीने पहले</string>
+    <string name="changed_one_month">1 महीना पहले</string>
+    <string name="changed_years">%1$d साल पहले</string>
+    <string name="changed_one_year">1 साल पहले</string>
+    <string name="no_url">कोई लिंक सहेजा नहीं गया</string>
+    <string name="no_username">कोई उपयोगकर्ता नाम सहेजा नहीं गया</string>
+    <string name="no_notes">कोई नोट्स नहीं</string>
+    <string name="copy_username">उपयोगकर्ता नाम कॉपी करें</string>
+    <string name="copy_url">लिंक कॉपी करें</string>
+    <string name="copy_notes">नोट्स कॉपी करें</string>
+    <string name="delete_account_title">यह खाता हटाएँ?</string>
+    <string name="delete_account_body">“%1$s” और इसकी सहेजी गई छवि इस फ़ोन से हमेशा के लिए हटा दी जाएगी। इसे पूर्ववत नहीं किया जा सकता।</string>
+    <string name="duplicate_warning">यह पासवर्ड किसी अन्य खाते में भी उपयोग हो रहा है। हर लॉगिन के लिए अलग पासवर्ड रखें।</string>
+    <string name="old_password_warning">यह पासवर्ड बहुत समय से नहीं बदला गया। इसे अपडेट करने पर विचार करें।</string>
+    <string name="weak_password_warning">यह पासवर्ड कमज़ोर लगता है। मज़बूत पासवर्ड बनाने के लिए जनरेटर का उपयोग करें।</string>
+    <string name="share_blocked_title">साझा करना बंद है</string>
+    <string name="share_blocked_body">OfflineVault के पास कोई नेटवर्क अनुमति नहीं है और यह जानबूझकर क्रेडेंशियल अन्य ऐप्स को साझा नहीं कर सकता।</string>
+    <string name="share">साझा करें</string>
+    <string name="open_in_browser_disabled">OfflineVault लिंक कभी नहीं खोलता।</string>
+    <string name="account_not_found">खाता नहीं मिला।</string>
+    <string name="account_deleted">खाता हटा दिया गया।</string>
+    <string name="detail_security_note">स्क्रीनशॉट और स्क्रीन रिकॉर्डिंग सुरक्षा सक्रिय है।</string>
+    <string name="password_auto_hide_note">15 सेकंड तक दिखाई देगा</string>
+
+    <!-- Add / edit -->
+    <string name="new_account">नया खाता</string>
+    <string name="edit_account_title">खाता संपादित करें</string>
+    <string name="account_name">खाते का नाम</string>
+    <string name="account_name_hint">जैसे Gmail, बैंक, Instagram</string>
+    <string name="photo_or_icon">फ़ोटो या आइकन</string>
+    <string name="choose_photo_or_icon">फ़ोटो या अंतर्निहित आइकन चुनें</string>
+    <string name="choose_image">छवि चुनें</string>
+    <string name="pick_from_gallery">गैलरी से चुनें</string>
+    <string name="take_photo">फ़ोटो लें</string>
+    <string name="built_in_icons">अंतर्निहित आइकन</string>
+    <string name="remove_image">छवि हटाएँ</string>
+    <string name="url_optional">लिंक / URL (वैकल्पिक)</string>
+    <string name="url_hint">https://example.com</string>
+    <string name="url_invalid">मान्य http:// या https:// वेब पता दर्ज करें।</string>
+    <string name="username_optional">उपयोगकर्ता नाम / ईमेल (वैकल्पिक)</string>
+    <string name="username_hint">name@example.com</string>
+    <string name="password">पासवर्ड</string>
+    <string name="password_hint">पासवर्ड दर्ज करें या बनाएँ</string>
+    <string name="generate_password">पासवर्ड बनाएँ</string>
+    <string name="notes_optional">नोट्स (वैकल्पिक)</string>
+    <string name="notes_hint">रिकवरी कोड, याद रखने की बातें या कोई भी निजी जानकारी</string>
+    <string name="category">श्रेणी</string>
+    <string name="name_required">खाते का नाम आवश्यक है।</string>
+    <string name="password_required">पासवर्ड आवश्यक है।</string>
+    <string name="image_pick_failed">वह छवि लोड नहीं हो सकी।</string>
+    <string name="camera_unavailable">कोई कैमरा ऐप उपलब्ध नहीं है।</string>
+    <string name="account_saved">खाता सहेजा गया।</string>
+    <string name="link_note">लिंक टेक्स्ट के रूप में संग्रहीत होते हैं और OfflineVault उन्हें कभी नहीं खोलता।</string>
+
+    <!-- Password generator -->
+    <string name="password_generator">पासवर्ड जनरेटर</string>
+    <string name="length">लंबाई: %1$d</string>
+    <string name="include_uppercase">बड़े अक्षर (A–Z)</string>
+    <string name="include_lowercase">छोटे अक्षर (a–z)</string>
+    <string name="include_digits">अंक (0–9)</string>
+    <string name="include_symbols">चिह्न (!@#$…)</string>
+    <string name="exclude_ambiguous">अस्पष्ट अक्षर हटाएँ (0/O, l/1)</string>
+    <string name="regenerate">फिर बनाएँ</string>
+    <string name="use_this_password">यह पासवर्ड उपयोग करें</string>
+    <string name="include_at_least_one">कम से कम एक अक्षर प्रकार चुनें।</string>
+    <string name="generator_note">SecureRandom से स्थानीय रूप से बनाया गया। Math.random() से कभी नहीं।</string>
+    <string name="strength_weak">कमज़ोर</string>
+    <string name="strength_fair">ठीक</string>
+    <string name="strength_medium">मध्यम</string>
+    <string name="strength_strong">मज़बूत</string>
+    <string name="strength_very_strong">बहुत मज़बूत</string>
+
+    <!-- Settings -->
+    <string name="settings_title">सेटिंग्स</string>
+    <string name="section_security">सुरक्षा</string>
+    <string name="change_pin">मास्टर पिन बदलें</string>
+    <string name="change_pin_desc">अपना फ़ॉलबैक पिन अपडेट करें</string>
+    <string name="change_security_questions">सुरक्षा प्रश्न अपडेट करें</string>
+    <string name="change_security_questions_desc">प्रश्न और उत्तर बदलें</string>
+    <string name="biometric_unlock">बायोमेट्रिक अनलॉक</string>
+    <string name="biometric_unlock_desc">फ़िंगरप्रिंट या चेहरा</string>
+    <string name="biometric_unavailable">इस डिवाइस पर बायोमेट्रिक्स उपलब्ध नहीं हैं।</string>
+    <string name="biometric_not_enrolled">कोई फ़िंगरप्रिंट या चेहरा नामांकित नहीं है।</string>
+    <string name="biometric_enabled_prompt">बायोमेट्रिक अनलॉक सक्षम करने के लिए प्रमाणित करें</string>
+    <string name="auto_lock">स्वतः लॉक</string>
+    <string name="clipboard_clear">क्लिपबोर्ड स्वतः साफ़ करें</string>
+    <string name="section_appearance">रूप-रंग</string>
+    <string name="theme">थीम</string>
+    <string name="theme_system">सिस्टम के अनुसार</string>
+    <string name="theme_light">हल्की</string>
+    <string name="theme_dark">गहरी</string>
+    <string name="section_data">डेटा और बैकअप</string>
+    <string name="backup_restore">एन्क्रिप्टेड बैकअप</string>
+    <string name="backup_restore_desc">पासवर्ड-सुरक्षित .vault फ़ाइल निर्यात या पुनर्स्थापित करें</string>
+    <string name="delete_all_data">सारा डेटा हटाएँ</string>
+    <string name="delete_all_data_desc">खाते, छवियाँ और सेटिंग्स मिटाएँ</string>
+    <string name="section_about">गोपनीयता</string>
+    <string name="about_privacy">OfflineVault के बारे में</string>
+    <string name="about_privacy_desc">आपका डेटा कैसे सुरक्षित है</string>
+    <string name="offline_only">इस ऐप में कोई नेटवर्क अनुमति और कोई analytics नहीं है।</string>
+    <string name="current_pin">वर्तमान पिन</string>
+    <string name="new_pin">नया पिन</string>
+    <string name="confirm_new_pin">नए पिन की पुष्टि करें</string>
+    <string name="pin_changed">मास्टर पिन बदल दिया गया।</string>
+    <string name="invalid_current_pin">वर्तमान पिन गलत है।</string>
+    <string name="pins_dont_match">नए पिन मेल नहीं खाते।</string>
+    <string name="auto_lock_immediate">तुरंत</string>
+    <plurals name="auto_lock_seconds">
+        <item quantity="one">%1$d सेकंड</item>
+        <item quantity="other">%1$d सेकंड</item>
+    </plurals>
+    <plurals name="auto_lock_minutes">
+        <item quantity="one">%1$d मिनट</item>
+        <item quantity="other">%1$d मिनट</item>
+    </plurals>
+    <string name="clipboard_off">कभी स्वतः साफ़ न करें</string>
+    <string name="clipboard_note">कॉपी किया गया डेटा Android 13+ पर संवेदनशील के रूप में चिह्नित होता है और चुने गए समय के बाद स्वतः साफ़ हो जाता है। “बंद” आपकी सुरक्षा कमज़ोर करता है।</string>
+
+    <string name="wipe_double_title">बिल्कुल सब कुछ हटाएँ?</string>
+    <string name="wipe_double_body">हर खाता, छवि, पिन, सुरक्षा उत्तर और सेटिंग मिटा दी जाएगी। इसे पूर्ववत नहीं किया जा सकता और क्लाउड कॉपी भी नहीं है।</string>
+    <string name="wipe_continue">पिन पर जाएँ</string>
+    <string name="wipe_pin_title">अपना पिन पुष्ट करें</string>
+    <string name="wipe_pin_body">वॉल्ट हमेशा के लिए मिटाने के लिए अपना वर्तमान मास्टर पिन दर्ज करें।</string>
+    <string name="wipe_action">सब कुछ मिटाएँ</string>
+    <string name="wipe_success">वॉल्ट मिटा दिया गया।</string>
+    <string name="wipe_failed">वॉल्ट मिटाया नहीं जा सका। फिर प्रयास करें।</string>
+    <string name="deleting">मिटाया जा रहा है…</string>
+
+    <!-- Security questions settings -->
+    <string name="security_questions_title">सुरक्षा प्रश्न</string>
+    <string name="security_questions_info">तीन नए प्रश्न और उत्तर सेट करें। वॉल्ट खोलने के लिए दो सही उत्तर आवश्यक हैं।</string>
+    <string name="save_questions">प्रश्न सहेजें</string>
+    <string name="questions_updated">सुरक्षा प्रश्न अपडेट हो गए।</string>
+
+    <!-- Backup -->
+    <string name="backup_restore_title">एन्क्रिप्टेड बैकअप</string>
+    <string name="export_backup">वॉल्ट निर्यात करें</string>
+    <string name="export_backup_desc">सिस्टम फ़ाइल पिकर के माध्यम से AES-256-GCM एन्क्रिप्टेड .vault फ़ाइल लिखें।</string>
+    <string name="import_backup">वॉल्ट आयात करें</string>
+    <string name="import_backup_desc">एन्क्रिप्टेड .vault फ़ाइल से खाते और छवियाँ पुनर्स्थापित करें।</string>
+    <string name="export_pin_title">बैकअप को पिन से सुरक्षित करें</string>
+    <string name="export_pin_body">बैकअप आपके मास्टर पिन से एन्क्रिप्ट होता है और उसके बिना नहीं खोला जा सकता।</string>
+    <string name="import_warning_title">यह वॉल्ट बदलें?</string>
+    <string name="import_warning_body">आयात करने पर सभी वर्तमान खाते और छवियाँ बैकअप की सामग्री से बदल दी जाएँगी। इसे पूर्ववत नहीं किया जा सकता।</string>
+    <string name="backup_file_name">OfflineVault-backup.vault</string>
+    <string name="export_success">एन्क्रिप्टेड बैकअप सहेजा गया।</string>
+    <string name="export_failed">बैकअप नहीं बनाया जा सका।</string>
+    <plurals name="import_success">
+        <item quantity="one">बैकअप पुनर्स्थापित: %1$d खाता।</item>
+        <item quantity="other">बैकअप पुनर्स्थापित: %1$d खाते।</item>
+    </plurals>
+    <string name="import_failed">यह बैकअप डिक्रिप्ट या पुनर्स्थापित नहीं हो सका।</string>
+    <string name="backup_pin_hint">इस फ़ाइल को एन्क्रिप्ट करने में उपयोग किया गया मास्टर पिन</string>
+    <string name="restore_action">बैकअप पुनर्स्थापित करें</string>
+    <string name="backup_warning">इस फ़ाइल को केवल किसी भरोसेमंद स्थान पर सहेजें। फ़ाइल रखने वाला कोई भी व्यक्ति ऑफ़लाइन पिन का ब्रूट-फ़ोर्स प्रयास कर सकता है।</string>
+    <string name="backup_never_network">OfflineVault बैकअप कभी अपलोड नहीं करता। सिस्टम फ़ाइल पिकर आपके नियंत्रण में है।</string>
+    <string name="choose_backup">.vault बैकअप चुनें</string>
+    <string name="reading_backup">बैकअप डिक्रिप्ट हो रहा है…</string>
+    <string name="writing_backup">बैकअप एन्क्रिप्ट हो रहा है…</string>
+
+    <!-- About -->
+    <string name="about_title">OfflineVault के बारे में</string>
+    <string name="about_tagline">पासवर्ड के लिए एक शांत जगह — पूरी तरह आपके फ़ोन पर।</string>
+    <string name="about_privacy_title">शून्य-इंटरनेट डिज़ाइन</string>
+    <string name="about_privacy_body">OfflineVault INTERNET, ACCESS_NETWORK_STATE, Bluetooth, NFC या कैमरा अनुमतियाँ नहीं मांगता। कोई analytics SDK, ad SDK, Firebase, telemetry या crash reporter नहीं है। Airplane mode बदलने से कुछ नहीं बदलता।</string>
+    <string name="about_security_title">डेटा कैसे सुरक्षित है</string>
+    <string name="about_security_body">खाता डेटा SQLCipher-एन्क्रिप्टेड Room डेटाबेस में संग्रहीत होता है। संवेदनशील फ़ील्ड अलग-अलग AES-256-GCM से Android Keystore की कुंजी का उपयोग करके एन्क्रिप्ट होते हैं। ऐप-निजी छवियों में यादृच्छिक UUID फ़ाइलनाम होते हैं। ऐप हर स्क्रीन पर FLAG_SECURE का उपयोग करता है।</string>
+    <string name="about_permissions_title">अनुमतियाँ</string>
+    <string name="about_permissions_body">केवल USE_BIOMETRIC और USE_FINGERPRINT घोषित हैं। सिस्टम फ़ाइल पिकर स्टोरेज अनुमतियों के बिना एन्क्रिप्टेड बैकअप फ़ाइलें संभालता है। फ़ोटो सिस्टम पिकर से एक बार पढ़ी जाती हैं; कैमरा ऐप बिना कैमरा अनुमति के बाहर से खोला जाता है।</string>
+    <string name="about_recovery_title">शून्य-ज्ञान रिकवरी</string>
+    <string name="about_recovery_body">कोई सर्वर, खाता, OTP या ईमेल रीसेट नहीं है। आपका पिन, दो सुरक्षा उत्तर या इस डिवाइस पर नामांकित बायोमेट्रिक वॉल्ट खोल सकते हैं। तीनों खोने का अर्थ है स्थायी नुकसान।</string>
+    <string name="about_clipboard_title">क्लिपबोर्ड और स्क्रीनशॉट</string>
+    <string name="about_clipboard_body">कॉपी किए गए मान आपके चुने हुए समय के बाद स्वतः साफ़ हो जाते हैं। ऑपरेटिंग सिस्टम स्क्रीनशॉट और स्क्रीन रिकॉर्डिंग रोकता है। बैकग्राउंड जाने या निष्क्रियता के बाद वॉल्ट लॉक हो जाता है।</string>
+    <string name="about_version">संस्करण %1$s</string>
+    <string name="about_built_with">Kotlin, Jetpack Compose, Room + SQLCipher, Android Keystore और BiometricPrompt से बनाया गया।</string>
+    <string name="about_no_links">इस स्क्रीन में कोई बाहरी लिंक नहीं है और कोई नेटवर्क उपयोग नहीं होता।</string>
+
+    <!-- Security question presets (stored in English so answers survive locale changes) -->
+    <string name="preset_custom">अपना प्रश्न…</string>
+    <string name="preset_pet">आपके पहले पालतू जानवर का नाम क्या था?</string>
+    <string name="preset_friend">आपके बचपन के सबसे अच्छे दोस्त का नाम क्या था?</string>
+    <string name="preset_teacher">आपके पसंदीदा शिक्षक का नाम क्या था?</string>
+    <string name="preset_city">आप किस शहर में पैदा हुए थे?</string>
+    <string name="preset_school">आपके पहले स्कूल का नाम क्या था?</string>
+    <string name="preset_book">आपकी पसंदीदा किताब कौन सी है?</string>
+
+    <string name="content_desc_app_logo">OfflineVault लोगो</string>
+    <string name="content_desc_lock">वॉल्ट लॉक करें</string>
+    <string name="content_desc_back">वापस जाएँ</string>
+    <string name="content_desc_search">खाते खोजें</string>
+    <string name="content_desc_clear_search">खोज साफ़ करें</string>
+    <string name="content_desc_account_image">%1$s के लिए छवि</string>
+    <string name="content_desc_settings">सेटिंग्स खोलें</string>
+    <string name="content_desc_about">परिचय स्क्रीन खोलें</string>
+    <string name="content_desc_vault">वॉल्ट खोलें</string>
+</resources>

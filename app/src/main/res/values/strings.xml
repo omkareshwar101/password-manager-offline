@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">OfflineVault</string>
+    <string name="offline_badge" formatted="false">100% offline</string>
+
+    <!-- Common -->
+    <string name="back">Back</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="saving">Saving…</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="continue_label">Continue</string>
+    <string name="retry">Try again</string>
+    <string name="close">Close</string>
+    <string name="copy">Copy</string>
+    <plurals name="copied_clears">
+        <item quantity="one">Copied. Clipboard clears in %1$d second.</item>
+        <item quantity="other">Copied. Clipboard clears in %1$d seconds.</item>
+    </plurals>
+    <string name="copied_no_clear">Copied to clipboard.</string>
+    <string name="show">Show</string>
+    <string name="hide">Hide</string>
+    <string name="reveal">Reveal</string>
+    <string name="error_generic">Something went wrong. Please try again.</string>
+    <string name="settings">Settings</string>
+    <string name="about">About</string>
+    <string name="vault">Vault</string>
+    <string name="favorite">Favorite</string>
+    <string name="unfavorite">Remove favorite</string>
+    <string name="authentication_failed">Authentication failed.</string>
+    <string name="password_not_revealed">Authentication failed. Password was not revealed.</string>
+    <string name="verify">Verify</string>
+    <string name="save_changes">Save changes</string>
+
+    <!-- Privacy / onboarding -->
+    <string name="privacy_title">Your secrets never leave this phone.</string>
+    <string name="privacy_subtitle">OfflineVault is built to work completely offline. No account. No cloud. No tracking. No exceptions.</string>
+    <string name="privacy_no_internet_title">No internet permission</string>
+    <string name="privacy_no_internet_body">The app has no network permission at all, so it is physically unable to upload your data.</string>
+    <string name="privacy_encrypted_title">Encrypted twice</string>
+    <string name="privacy_encrypted_body">The database is locked with SQLCipher and every sensitive field is encrypted with AES-256-GCM.</string>
+    <string name="privacy_keystore_title">Keys in Android Keystore</string>
+    <string name="privacy_keystore_body">Encryption keys are generated in the Android Keystore and use hardware-backed security when available.</string>
+    <string name="privacy_storage_title">Private storage only</string>
+    <string name="privacy_storage_body">Your vault lives in app-private storage, hidden from file managers, USB access, and other apps.</string>
+    <string name="privacy_recovery_title">You are the only recovery method</string>
+    <string name="privacy_recovery_body">There is no email reset, OTP, or cloud backup. If you forget your PIN and security answers, the vault cannot be recovered.</string>
+    <string name="get_started">Set up my vault</string>
+    <string name="step_of">Step %1$d of %2$d</string>
+
+    <string name="onboarding_pin_title">Create a master PIN</string>
+    <string name="onboarding_pin_subtitle">This PIN is your final fallback if biometrics fail. Use at least 6 digits.</string>
+    <string name="pin">Master PIN</string>
+    <string name="confirm_pin">Confirm PIN</string>
+    <string name="pin_hint">6–12 digits</string>
+    <string name="pin_error_length">Use between 6 and 12 digits.</string>
+    <string name="pin_error_mismatch">The PINs do not match.</string>
+    <string name="pin_warning">Remember this PIN. It cannot be reset without erasing the vault.</string>
+
+    <string name="onboarding_questions_title">Set security questions</string>
+    <string name="onboarding_questions_subtitle">Choose three questions and answer them. Two correct answers can unlock your vault.</string>
+    <string name="question_n">Question %1$d</string>
+    <string name="choose_question">Choose a question</string>
+    <string name="custom_question_hint">Your custom question</string>
+    <string name="answer_hint">Your answer</string>
+    <string name="security_answers_note">Answers are case-insensitive. Only salted PBKDF2 hashes are stored — never the answers themselves.</string>
+    <string name="security_warning">There is no account recovery. Without your PIN or two security answers, this vault cannot be opened.</string>
+    <string name="answer_required">Please answer all three questions.</string>
+    <string name="questions_must_differ">Please choose three different questions.</string>
+
+    <string name="onboarding_biometric_title">Unlock with biometrics</string>
+    <string name="onboarding_biometric_subtitle">Use your fingerprint or face to open the vault and reveal passwords.</string>
+    <string name="enable_biometrics">Enable biometrics</string>
+    <string name="disable_biometric">Disable biometric unlock</string>
+    <string name="biometrics_enabled">Biometric unlock is enabled</string>
+    <string name="skip_for_now">Skip for now</string>
+    <string name="no_biometrics_warning">No enrolled biometrics were found on this device. You can still use your PIN and security questions.</string>
+    <string name="open_device_settings">Open device settings</string>
+    <string name="biometric_setup_hint">Add a fingerprint or face in Android Settings first, then return and enable it here.</string>
+    <string name="biometric_confirm_prompt">Confirm biometric unlock</string>
+    <string name="create_vault">Create my vault</string>
+    <string name="creating_vault">Encrypting your vault…</string>
+    <string name="onboarding_error">Could not finish setup. Please try again.</string>
+
+    <!-- Unlock -->
+    <string name="lock_title">Vault locked</string>
+    <string name="lock_subtitle">Authenticate to open your private vault.</string>
+    <string name="biometric_prompt_title">Unlock OfflineVault</string>
+    <string name="biometric_prompt_subtitle">Confirm your identity to continue</string>
+    <string name="use_biometrics">Use biometrics</string>
+    <string name="use_pin">Use master PIN</string>
+    <string name="use_security_questions">Use security questions</string>
+    <string name="enter_pin">Enter your master PIN</string>
+    <string name="unlock_vault">Unlock vault</string>
+    <string name="auth_questions_title">Answer security questions</string>
+    <string name="auth_questions_subtitle">Two correct answers unlock the vault.</string>
+    <string name="submit_answers">Unlock with answers</string>
+    <string name="auth_invalid_pin">Incorrect PIN.</string>
+    <string name="auth_biometric_failed">Biometric authentication failed. Use your PIN or security questions.</string>
+    <string name="auth_invalid_answers">Not enough correct answers. Try again.</string>
+    <string name="auth_locked_out">Too many failed attempts. Try again in %1$s.</string>
+    <string name="auth_locked_out_short">Too many failed attempts.</string>
+    <string name="auth_force_questions">Too many incorrect PINs. Please answer two security questions to continue.</string>
+    <string name="auth_footer">No network. No recovery cloud. Just you.</string>
+    <string name="security_question_locked_note">For your security, PIN entry is paused after repeated failures.</string>
+
+    <!-- Vault -->
+    <string name="vault_title">OfflineVault</string>
+    <string name="search_accounts">Search accounts</string>
+    <string name="all_categories">All</string>
+    <string name="no_accounts_title">Your vault is empty</string>
+    <string name="no_accounts_body">Add your first login. Everything is encrypted and stays on this phone.</string>
+    <string name="no_search_results">No accounts match your search.</string>
+    <string name="add_account">Add account</string>
+    <string name="reveal_password">Reveal password</string>
+    <string name="copy_password">Copy password</string>
+    <string name="hide_password">Hide password</string>
+    <string name="username_not_set">No username saved</string>
+    <string name="reveal_auto_hide" tools:ignore="PluralsCandidate">Hides in %1$d seconds</string>
+    <string name="auth_reveal_title">Reveal password</string>
+    <string name="auth_reveal_subtitle">Authenticate to reveal the password for %1$s</string>
+    <string name="auth_manage_questions_title">Confirm it\'s you</string>
+    <string name="auth_manage_questions_subtitle">Re-authenticate before changing your recovery questions</string>
+    <plurals name="accounts_count">
+        <item quantity="one">%1$d account</item>
+        <item quantity="other">%1$d accounts</item>
+    </plurals>
+
+    <string name="category_social">Social</string>
+    <string name="category_banking">Banking</string>
+    <string name="category_work">Work</string>
+    <string name="category_shopping">Shopping</string>
+    <string name="category_other">Other</string>
+
+    <string name="badge_weak">Weak password</string>
+    <string name="badge_reused">Password reused</string>
+    <string name="badge_old">Old password</string>
+
+    <!-- Detail -->
+    <string name="account_details">Account details</string>
+    <string name="url_label">Link / URL</string>
+    <string name="username_label">Username / email</string>
+    <string name="password_label">Password</string>
+    <string name="notes_label">Notes</string>
+    <string name="last_changed">Last changed %1$s</string>
+    <string name="changed_today">today</string>
+    <!-- The UI already branches to "yesterday"/"1 month ago" before using these. -->
+    <string name="changed_days" tools:ignore="PluralsCandidate">%1$d days ago</string>
+    <string name="changed_one_day">yesterday</string>
+    <string name="changed_months" tools:ignore="PluralsCandidate">%1$d months ago</string>
+    <string name="changed_one_month">1 month ago</string>
+    <string name="changed_years" tools:ignore="PluralsCandidate">%1$d years ago</string>
+    <string name="changed_one_year">1 year ago</string>
+    <string name="no_url">No link saved</string>
+    <string name="no_username">No username saved</string>
+    <string name="no_notes">No notes</string>
+    <string name="copy_username">Copy username</string>
+    <string name="copy_url">Copy link</string>
+    <string name="copy_notes">Copy notes</string>
+    <string name="delete_account_title">Delete this account?</string>
+    <string name="delete_account_body">“%1$s” and its saved image will be permanently deleted from this phone. This cannot be undone.</string>
+    <string name="duplicate_warning">This password is also used by another account. Give each login a unique password.</string>
+    <string name="old_password_warning">This password has not changed in a long time. Consider updating it.</string>
+    <string name="weak_password_warning">This password looks weak. Use the generator to create a stronger one.</string>
+    <string name="share_blocked_title">Sharing is disabled</string>
+    <string name="share_blocked_body">OfflineVault has no network permission and deliberately cannot share credentials to other apps.</string>
+    <string name="share">Share</string>
+    <string name="open_in_browser_disabled">Links are never opened by OfflineVault.</string>
+    <string name="account_not_found">Account not found.</string>
+    <string name="account_deleted">Account deleted.</string>
+    <string name="detail_security_note">Screenshot and screen recording protection is active.</string>
+    <string name="password_auto_hide_note">Visible for 15 seconds</string>
+
+    <!-- Add / edit -->
+    <string name="new_account">New account</string>
+    <string name="edit_account_title">Edit account</string>
+    <string name="account_name">Account name</string>
+    <string name="account_name_hint">e.g. Gmail, Bank, Instagram</string>
+    <string name="photo_or_icon">Photo or icon</string>
+    <string name="choose_photo_or_icon">Choose a photo or built-in icon</string>
+    <string name="choose_image">Choose image</string>
+    <string name="pick_from_gallery">Choose from gallery</string>
+    <string name="take_photo">Take a photo</string>
+    <string name="built_in_icons">Built-in icons</string>
+    <string name="remove_image">Remove image</string>
+    <string name="url_optional">Link / URL (optional)</string>
+    <string name="url_hint">https://example.com</string>
+    <string name="url_invalid">Enter a valid http:// or https:// web address.</string>
+    <string name="username_optional">Username / email (optional)</string>
+    <string name="username_hint">name@example.com</string>
+    <string name="password">Password</string>
+    <string name="password_hint">Enter or generate a password</string>
+    <string name="generate_password">Generate password</string>
+    <string name="notes_optional">Notes (optional)</string>
+    <string name="notes_hint">Recovery codes, reminders, or anything private</string>
+    <string name="category">Category</string>
+    <string name="name_required">Account name is required.</string>
+    <string name="password_required">A password is required.</string>
+    <string name="image_pick_failed">Could not load that image.</string>
+    <string name="camera_unavailable">No camera app is available.</string>
+    <string name="account_saved">Account saved.</string>
+    <string name="link_note">Links are stored as text and are never opened by OfflineVault.</string>
+
+    <!-- Password generator -->
+    <string name="password_generator">Password generator</string>
+    <string name="length">Length: %1$d</string>
+    <string name="include_uppercase">Uppercase (A–Z)</string>
+    <string name="include_lowercase">Lowercase (a–z)</string>
+    <string name="include_digits">Digits (0–9)</string>
+    <string name="include_symbols">Symbols (!@#$…)</string>
+    <string name="exclude_ambiguous">Exclude ambiguous characters (0/O, l/1)</string>
+    <string name="regenerate">Regenerate</string>
+    <string name="use_this_password">Use this password</string>
+    <string name="include_at_least_one">Select at least one character type.</string>
+    <string name="generator_note">Generated locally with SecureRandom. Never from Math.random().</string>
+    <string name="strength_weak">Weak</string>
+    <string name="strength_fair">Fair</string>
+    <string name="strength_medium">Medium</string>
+    <string name="strength_strong">Strong</string>
+    <string name="strength_very_strong">Very strong</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="section_security">Security</string>
+    <string name="change_pin">Change master PIN</string>
+    <string name="change_pin_desc">Update your fallback PIN</string>
+    <string name="change_security_questions">Update security questions</string>
+    <string name="change_security_questions_desc">Replace questions and answers</string>
+    <string name="biometric_unlock">Biometric unlock</string>
+    <string name="biometric_unlock_desc">Fingerprint or face</string>
+    <string name="biometric_unavailable">Biometrics are not available on this device.</string>
+    <string name="biometric_not_enrolled">No fingerprint or face is enrolled.</string>
+    <string name="biometric_enabled_prompt">Authenticate to enable biometric unlock</string>
+    <string name="auto_lock">Auto-lock</string>
+    <string name="clipboard_clear">Clipboard auto-clear</string>
+    <string name="section_appearance">Appearance</string>
+    <string name="theme">Theme</string>
+    <string name="theme_system">Follow system</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+    <string name="section_data">Data &amp; backup</string>
+    <string name="backup_restore">Encrypted backup</string>
+    <string name="backup_restore_desc">Export or restore a password-protected .vault file</string>
+    <string name="delete_all_data">Delete all data</string>
+    <string name="delete_all_data_desc">Erase accounts, images, and settings</string>
+    <string name="section_about">Privacy</string>
+    <string name="about_privacy">About OfflineVault</string>
+    <string name="about_privacy_desc">How your data is protected</string>
+    <string name="offline_only">This app contains no network permission and no analytics.</string>
+    <string name="current_pin">Current PIN</string>
+    <string name="new_pin">New PIN</string>
+    <string name="confirm_new_pin">Confirm new PIN</string>
+    <string name="pin_changed">Master PIN changed.</string>
+    <string name="invalid_current_pin">Current PIN is incorrect.</string>
+    <string name="pins_dont_match">The new PINs do not match.</string>
+    <string name="auto_lock_immediate">Immediately</string>
+    <plurals name="auto_lock_seconds">
+        <item quantity="one">%1$d second</item>
+        <item quantity="other">%1$d seconds</item>
+    </plurals>
+    <plurals name="auto_lock_minutes">
+        <item quantity="one">%1$d minute</item>
+        <item quantity="other">%1$d minutes</item>
+    </plurals>
+    <string name="clipboard_off">Never clear automatically</string>
+    <string name="clipboard_note">Copied data is marked sensitive on Android 13+ and auto-clears after the selected time. “Off” weakens your security.</string>
+
+    <string name="wipe_double_title">Delete absolutely everything?</string>
+    <string name="wipe_double_body">Every account, image, PIN, security answer, and setting will be erased. There is no undo and no cloud copy.</string>
+    <string name="wipe_continue">Continue to PIN</string>
+    <string name="wipe_pin_title">Confirm your PIN</string>
+    <string name="wipe_pin_body">Enter your current master PIN to permanently erase the vault.</string>
+    <string name="wipe_action">Erase everything</string>
+    <string name="wipe_success">Vault erased.</string>
+    <string name="wipe_failed">Could not erase the vault. Try again.</string>
+    <string name="deleting">Erasing…</string>
+
+    <!-- Security questions settings -->
+    <string name="security_questions_title">Security questions</string>
+    <string name="security_questions_info">Set three new questions and answers. Two correct answers are required to unlock the vault.</string>
+    <string name="save_questions">Save questions</string>
+    <string name="questions_updated">Security questions updated.</string>
+
+    <!-- Backup -->
+    <string name="backup_restore_title">Encrypted backup</string>
+    <string name="export_backup">Export vault</string>
+    <string name="export_backup_desc">Write an AES-256-GCM encrypted .vault file through the system file picker.</string>
+    <string name="import_backup">Import vault</string>
+    <string name="import_backup_desc">Restore accounts and images from an encrypted .vault file.</string>
+    <string name="export_pin_title">Protect backup with PIN</string>
+    <string name="export_pin_body">The backup is encrypted with your master PIN and cannot be opened without it.</string>
+    <string name="import_warning_title">Replace this vault?</string>
+    <string name="import_warning_body">Importing replaces all current accounts and images with the contents of the backup. This cannot be undone.</string>
+    <string name="backup_file_name">OfflineVault-backup.vault</string>
+    <string name="export_success">Encrypted backup saved.</string>
+    <string name="export_failed">Could not create the backup.</string>
+    <plurals name="import_success">
+        <item quantity="one">Backup restored: %1$d account.</item>
+        <item quantity="other">Backup restored: %1$d accounts.</item>
+    </plurals>
+    <string name="import_failed">Could not decrypt or restore this backup.</string>
+    <string name="backup_pin_hint">Master PIN used to encrypt this file</string>
+    <string name="restore_action">Restore backup</string>
+    <string name="backup_warning">Only save this file somewhere you trust. Anyone with the file can attempt to brute-force the PIN offline.</string>
+    <string name="backup_never_network">OfflineVault never uploads backups. The system file picker is controlled by you.</string>
+    <string name="choose_backup">Choose a .vault backup</string>
+    <string name="reading_backup">Decrypting backup…</string>
+    <string name="writing_backup">Encrypting backup…</string>
+
+    <!-- About -->
+    <string name="about_title">About OfflineVault</string>
+    <string name="about_tagline">A quiet place for passwords — entirely on your phone.</string>
+    <string name="about_privacy_title">Zero-internet design</string>
+    <string name="about_privacy_body">OfflineVault does not request INTERNET, ACCESS_NETWORK_STATE, Bluetooth, NFC, or camera permissions. There is no analytics SDK, ad SDK, Firebase, telemetry, or crash reporter. Airplane mode changes nothing.</string>
+    <string name="about_security_title">How data is protected</string>
+    <string name="about_security_body">Account data is stored in a SQLCipher-encrypted Room database. Sensitive fields are individually encrypted with AES-256-GCM using a key in the Android Keystore. App-private images use random UUID filenames. The app uses FLAG_SECURE on every screen.</string>
+    <string name="about_permissions_title">Permissions</string>
+    <string name="about_permissions_body">Only USE_BIOMETRIC and USE_FINGERPRINT are declared. The system file picker handles encrypted backup files without storage permissions. Photos are read once through the system picker; the camera app is launched externally without a camera permission.</string>
+    <string name="about_recovery_title">Zero-knowledge recovery</string>
+    <string name="about_recovery_body">There is no server, account, OTP, or email reset. Your PIN, two security answers, or an enrolled biometric on this device can unlock the vault. Losing all three means permanent loss.</string>
+    <string name="about_clipboard_title">Clipboard &amp; screenshots</string>
+    <string name="about_clipboard_body">Copied values auto-clear after your chosen timeout. Screenshots and screen recording are blocked by the operating system. The vault locks after backgrounding or inactivity.</string>
+    <string name="about_version">Version %1$s</string>
+    <string name="about_built_with">Built with Kotlin, Jetpack Compose, Room + SQLCipher, Android Keystore, and BiometricPrompt.</string>
+    <string name="about_no_links">This screen has no external links and uses no network.</string>
+
+    <!-- Security question presets (stored in English so answers survive locale changes) -->
+    <string name="preset_custom">Custom question…</string>
+    <string name="preset_pet">What was your first pet\'s name?</string>
+    <string name="preset_friend">What is your childhood best friend\'s name?</string>
+    <string name="preset_teacher">What was your favourite teacher\'s name?</string>
+    <string name="preset_city">What city were you born in?</string>
+    <string name="preset_school">What was the name of your first school?</string>
+    <string name="preset_book">What is your favourite book?</string>
+
+    <string name="content_desc_app_logo">OfflineVault logo</string>
+    <string name="content_desc_lock">Lock the vault</string>
+    <string name="content_desc_back">Go back</string>
+    <string name="content_desc_search">Search accounts</string>
+    <string name="content_desc_clear_search">Clear search</string>
+    <string name="content_desc_account_image">Image for %1$s</string>
+    <string name="content_desc_settings">Open settings</string>
+    <string name="content_desc_about">Open about screen</string>
+    <string name="content_desc_vault">Open vault</string>
+</resources>
